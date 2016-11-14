@@ -11,7 +11,7 @@ from keras.optimizers import Adam
 from keras.layers.advanced_activations import LeakyReLU
 from sklearn.utils import shuffle
 
-X_train = np.load('sdss/training_images.50k.npy')
+X_train = np.load('/Users/zhangguanghua/Desktop/Stampede/training_images.90k.npy')
 X_train = X_train[:, 2:3, 8:-8, 8:-8]
 
 idx = np.unique(np.where(np.min(X_train, axis=(1, 2, 3)) < 21.5)[0])
