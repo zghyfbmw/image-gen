@@ -91,7 +91,7 @@ y_hat = discriminator.predict(X)
 # set up loss storage vector
 losses = {"d":[], "g":[]}
 
-def train_for_n(nb_epoch=10000, batch_size=128):
+def train_for_n(nb_epoch=50000, batch_size=128):
 
     for e in range(nb_epoch):  
         
@@ -132,4 +132,4 @@ def train_for_n(nb_epoch=10000, batch_size=128):
 
         print("Iteration: {0} / {1}, Loss: {2:.4f}".format(e, nb_epoch, float(g_loss)))
 
-train_for_n(nb_epoch=1000, batch_size=128)
+train_for_n(nb_epoch=20000, batch_size=128)
